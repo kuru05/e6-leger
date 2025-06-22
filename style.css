@@ -1,0 +1,275 @@
+/* RESET GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+html {
+    height: 100%;
+}
+body {
+    height:100vh;
+    margin:0;
+    padding:0;
+    /* ton dégradé existant */
+    background-image: linear-gradient(21deg, rgba(64, 83, 206, 0.3697003234675773) 68%, rgba(255, 206, 196, 0.5) 163%), linear-gradient(163deg, rgba(49, 146, 170, 0.07944489965716128) 86%, rgba(239, 112, 138, 0.5) 40%), linear-gradient(30deg, rgba(76, 79, 173, 0.6173675716587805) 22%, rgba(237, 106, 134, 0.5) 169%), linear-gradient(48deg, rgba(31, 85, 147, 0.7323890641868473) 64%, rgba(247, 126, 132, 0.5) 43%);
+    background-blend-mode: overlay, multiply, color, normal;
+    background-repeat:repeat;
+    background-position: center center;
+    background-size: cover;
+    background-blend-mode: overlay, multiply;
+
+    }
+
+/* PAGE SPÉCIFIQUE : Signup ou Connexion */
+body.signup-container,
+body.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* LAYOUT CONTAINER */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-image: linear-gradient(21deg, rgba(64, 83, 206, 0.3697003234675773) 68%, rgba(255, 206, 196, 0.5) 163%), linear-gradient(163deg, rgba(49, 146, 170, 0.07944489965716128) 86%, rgba(239, 112, 138, 0.5) 40%), linear-gradient(30deg, rgba(76, 79, 173, 0.6173675716587805) 22%, rgba(237, 106, 134, 0.5) 169%), linear-gradient(48deg, rgba(31, 85, 147, 0.7323890641868473) 64%, rgba(247, 126, 132, 0.5) 43%);
+        background-blend-mode: overlay, multiply, color, normal;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Ajoute une classe spécifique sur le <body> si tu veux */
+body.connexion-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* important si le contenu est petit */ 
+}
+
+.login-container {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 0 auto;
+}
+
+
+.signup-container,
+.profile-container,
+.login-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position:absolute;
+    top: 25%;
+    left: 40%;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 0 0;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+/* TITRES & LABELS */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+    color: #000;
+}
+
+/* ERREURS */
+#error-msg {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* BOUTONS */
+.btn,
+.custom-btn {
+    background-color: #a80600;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #a80600;
+}
+
+.custom-btn {
+    width: 100%;
+    font-size: 16px;
+    height: 40px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, 0.5),
+        7px 7px 20px 0 rgba(0, 0, 0, 0.1),
+        4px 4px 5px 0 rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+/* BOUTON VARIANTE BTN-8 */
+.btn-8 {
+    background-image: linear-gradient(315deg, #f0ecfc 0%, #9c74bb 74%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+.btn-8 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-8:before,
+.btn-8:after,
+.btn-8 span:before,
+.btn-8 span:after {
+    content: "";
+    position: absolute;
+    background: #c797eb;
+    transition: all 0.3s ease;
+}
+
+.btn-8:before {
+    height: 0%;
+    width: 2px;
+    right: 0;
+    bottom: 0;
+}
+
+.btn-8:after {
+    width: 0%;
+    height: 2px;
+    right: 0;
+    bottom: 0;
+}
+
+.btn-8:hover:before {
+    height: 100%;
+}
+
+.btn-8:hover:after {
+    width: 100%;
+}
+
+.btn-8:hover {
+    background: transparent;
+}
+
+.btn-8 span:hover {
+    color: #c797eb;
+}
+
+.btn-8 span:before {
+    width: 2px;
+    height: 0%;
+    left: 0;
+    top: 0;
+    background: #76419e;
+}
+
+.btn-8 span:after {
+    height: 2px;
+    width: 0%;
+    left: 0;
+    top: 0;
+    background: #76419e;
+}
+
+.btn-8 span:hover:before {
+    height: 100%;
+}
+
+.btn-8 span:hover:after {
+    width: 100%;
+}
+
+.cart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    text-align: center;
+    padding: 20px;
+    padding-top:30px;
+}
+
+.cart-content {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    height:100%;
+    width: 100%;
+}
+
+.cart-content h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.cart-table th,
+.cart-table td {
+    padding: 12px;
+    border: 3px solid rgb(0, 0, 0);
+    text-align: center;
+}
+
+.cart-table th {
+    background-color: rgba(0, 0, 0, 0.302);
+    font-weight: bold;
+}
+.cart-content p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.cart-content a {
+    color: #f7b2d9;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.filter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7rem;
+}
