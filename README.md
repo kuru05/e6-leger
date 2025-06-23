@@ -9,11 +9,7 @@ Une plateforme e-commerce légère permettant de consulter un catalogue de voitu
 1. [Fonctionnalités](#fonctionnalités)  
 2. [Prérequis](#prérequis)  
 3. [Installation & démarrage](#installation--démarrage)  
-4. [Structure du projet](#structure-du-projet)  
-5. [Usage](#usage)  
-6. [Technologies](#technologies)  
-7. [Sécurité & bonnes pratiques](#sécurité--bonnes-pratiques)  
-8. [Auteur & support](#auteur--support)  
+
 
 ---
 
